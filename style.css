@@ -8,4 +8,10 @@
 
 :root {
   font-size: 62.5%;
+  --color--bg--white: #F9F4FB;
+  --color--bg--purple--600: #343193; 
+  --color--bg--purple--800: #302C63;
+  --color--title--pink: #B52184;
+  --color--subtitle-purple: #312D64;
+  --color--subtitle--white: #FFFFFF;
 }
