@@ -18,7 +18,7 @@
   </header>
   
   <main>
-     <section>
+     <section id="cards">
       <div id="card-1" class="card">
         <img src="./images/image-card-1.png" alt="Ilustração de um planeta amarela">
         <h2>Não pare nunca</h2>
@@ -42,26 +42,25 @@
      </section>
   </main>
 
-  <footer>
-    <section>
-      <h3>Entre em contato</h3>
-
+    <section id="contact">
       <form>
-        <input type="text" placeholder="Seu nome">
-
-        <input type="text" placeholder="Email">
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
-
+        <h3>Entre em contato</h3>
+        <fieldset>
+        <input id="name" type="name" placeholder="Seu nome">
+        <input id="email" type="email" placeholder="Email">
+        <textarea placeholder="Digite sua mensagem aqui..."></textarea>
         <button>Enviar mensagem</button>
+        </fieldset>
       </form>
     </section>
 
-    <img src="./images/star-bg-image.png" alt="Ilustração de diversas estrelas">
-
-    <section>
+    <div class="stars">
+      <img src="./images/star-bg-image.png" alt="Ilustração de diversas estrelas">
+    </div>
+ 
+    <footer>
       <p>&copy; 2023 - Rocketseat Explorer</p>
-    </section>
-  </footer>
+    </footer>
+
 </body>
 </html>
