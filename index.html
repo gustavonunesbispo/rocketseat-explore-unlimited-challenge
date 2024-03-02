@@ -13,7 +13,7 @@
   <header>
     <img src="./images/image-1.png" alt="Ilustração de um astronauta no espaço">
     <h1>Explore sem limites</h1>
-    <p>Porque o aprendizado é contínuo</p>
+    <p class="subtitle">Porque o aprendizado é contínuo</p>
     <img src="./images/arrow-button.svg" alt="Um ícone de uma seta indicando para baixo">
   </header>
   
@@ -28,8 +28,8 @@
 
       <div id="card-2" class="card">
         <img src="./images/image-card-2.png" alt="Ilustração de um planeta azul">
-        <h2>Não pare nunca</h2>
-        <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar.
+        <h2>Só volta</h2>
+        <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. 
           Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
       </div>
 
@@ -46,8 +46,14 @@
       <form>
         <h3>Entre em contato</h3>
         <fieldset>
-        <input id="name" type="name" placeholder="Seu nome">
-        <input id="email" type="email" placeholder="Email">
+        <div class="input-wrapper">
+          <input id="name" type="name" placeholder="Seu nome">
+          <img src="./images/vector-profile.svg" alt="" class="icon">
+        </div>
+        <div class="input-wrapper">
+          <input id="email" type="email" placeholder="Email">
+          <img src="./images/vector-email.svg" alt="" class="icon">
+        </div>
         <textarea placeholder="Digite sua mensagem aqui..."></textarea>
         <button>Enviar mensagem</button>
         </fieldset>

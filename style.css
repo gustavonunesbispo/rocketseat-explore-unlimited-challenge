@@ -14,6 +14,7 @@
   --color--title--pink: #B52184;
   --color--subtitle-purple: #312D64;
   --color--subtitle--white: #FFFFFF;
+  --color--border--purple: #312D64;
 }
 
 html, body, input, textarea, button {
@@ -21,3 +22,158 @@ html, body, input, textarea, button {
   font-weight: 600;
   font-size: 1.6rem;
 }
+
+body {
+  display: grid;
+  height: 100vh;
+  background-color: var(--color--bg--white);
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 9.3rem;
+}
+
+main {
+  padding: 5.3rem 0 5.3rem 0;
+}
+
+main, footer {
+  background: linear-gradient(to bottom right, var(--color--bg--purple--600), var(--color--bg--purple--800));
+}
+
+.stars {
+  display: none;
+}
+
+h1, h2, h3 {
+  color: var(--color--title--pink);
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 4.3rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+main p {
+  margin-top: 1.5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+
+p, input, textarea, button {
+  color: var(--color--subtitle-purple);
+}
+
+form, fieldset, input, textarea, button {
+  border: none;
+}
+
+#cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card {
+  background-color: var(--color--bg--white);
+  width: 35.2rem;
+  height: 33.8rem;
+  border-radius: 1.9rem;
+  padding: 2.6rem;
+}
+
+.card img {
+  width: 8rem;
+  height: 8rem;
+}
+
+#contact {
+  margin: 7.8rem 0 6.5rem 0;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+}
+
+fieldset {
+  display: grid;
+  gap: 2.4rem;
+  width: 34.8rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+input {
+  border-radius: 1.6rem;
+  border: .2rem solid var(--color--border--purple);
+  padding: 1.6rem 1.6rem 1.6rem 5rem;
+  width: 34.8rem;
+  height: 4.8rem;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+
+textarea {
+  resize: none;
+  border-radius: 1.6rem;
+  border: .2rem solid var(--color--border--purple);
+  padding: 1.2rem 1.6rem 1.6rem 1.6rem;
+  height: 12.6rem;
+}
+
+button {
+  color: var(--color--subtitle--white);
+  background: linear-gradient(to bottom right, var(--color--bg--purple--600), var(--color--bg--purple--800));
+  border-radius: 1.6rem;
+  padding: 1rem 1.6rem;
+  font-weight: 800;
+  width: 18rem;
+  height: 4.5rem;
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+  padding: 3.2rem 1.6rem;
+}
+
+footer p {
+  color: var(--color--subtitle--white);
+}
+
+
