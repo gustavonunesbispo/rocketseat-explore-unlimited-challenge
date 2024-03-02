@@ -132,7 +132,6 @@ fieldset {
   display: inline-block;
 }
 
-
 input {
   border-radius: 1.6rem;
   border: .2rem solid var(--color--border--purple);
@@ -176,4 +175,41 @@ footer p {
   color: var(--color--subtitle--white);
 }
 
+@media (min-width: 1430px) {
+  p {
+    font-size: 2rem;
+  }
 
+  #cards {
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .card {
+    width: 37rem;
+    height: 45rem;
+    padding: 3.2rem;
+  }
+
+  .card img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .stars {
+    display: flex;
+    justify-content: flex-end
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  input {
+    width: 59.2rem;
+  }
+
+}
