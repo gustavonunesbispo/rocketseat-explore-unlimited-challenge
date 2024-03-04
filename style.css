@@ -50,11 +50,6 @@ header {
   padding-bottom: 9.3rem;
 }
 
-header img {
-  animation: scale 30s linear infinite; 
-  transition: transform 0.3s ease;
-}
-
 header h1 {
   font-size: 3.2rem;
   font-weight: 900;
@@ -195,15 +190,6 @@ footer {
 
 footer p {
   color: var(--color--subtitle--white);
-}
-
-@keyframes scale {
-  0%, 100% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1);
-  }
 }
 
 @keyframes rotate {
