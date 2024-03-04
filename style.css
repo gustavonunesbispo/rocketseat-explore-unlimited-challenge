@@ -216,7 +216,6 @@ footer p {
 @media (min-width: 1430px) {
   header {
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 10.3rem;
   }
