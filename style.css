@@ -1,3 +1,5 @@
+/* reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* root */
 
 :root {
   font-size: 62.5%;
@@ -18,11 +22,15 @@
   --color--border--purple: #312D64;
 }
 
+/* set font */
+
 html, body, input, textarea, button {
   font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
 }
+
+/* colors texts */
 
 h1, h2, h3 {
   color: var(--color--title--pink);
@@ -32,22 +40,31 @@ p, input, textarea, button {
   color: var(--color--subtitle-purple);
 }
 
-form, fieldset, input, textarea, button {
-  border: none;
-}
+/* body */
 
 body {
-  display: grid;
-  margin: 0 auto;
-  height: 100vh;
   background-color: var(--color--bg--white);
 }
 
+#page {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+/* header */
+
 header {
   display: grid;
+  justify-content: center;
   align-items: center;
   justify-items: center;
   padding-bottom: 9.3rem;
+}
+
+.astronaut img {
+  max-width: 36.4rem;
 }
 
 header h1 {
@@ -67,6 +84,7 @@ header p {
   margin-bottom: 3.5rem;
 }
 
+/* main */
 main {
   padding: 5.3rem 0 5.3rem 0;
   background: linear-gradient(to bottom right, var(--color--bg--purple--600), var(--color--bg--purple--800));
@@ -112,6 +130,7 @@ main p {
   height: 8rem;
 }
 
+/* contact section */
 #contact {
   margin: 7.8rem 0 6.5rem 0;
 }
@@ -126,6 +145,14 @@ h3 {
   font-weight: 900;
   margin-bottom: 4.3rem;
 }
+
+/* form reset */
+
+form, fieldset, input, textarea, button {
+  border: none;
+}
+
+/* form settings */
 
 fieldset {
   display: grid;
@@ -176,10 +203,14 @@ button:hover {
   transform: scale(1.1);
 }
 
+/* star background */
+
 .stars {
   display: none;
   animation: twinkling 1.5s linear infinite;
 }
+
+/* footer */
 
 footer {
   display: grid;
@@ -191,6 +222,8 @@ footer {
 footer p {
   color: var(--color--subtitle--white);
 }
+
+/* animations */
 
 @keyframes rotate {
   from {
@@ -213,35 +246,46 @@ footer p {
   }
 }
 
+/* media queries */
+
 @media (min-width: 1430px) {
+  /* header */
+  
   header {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 10.3rem;
-  }
-  
-  header h1 {
-    margin-top: 31.2rem;
-    font-size: 5.8rem;
-  }
-  
-  .subtitle {
-    font-size: 3.2rem;
-    font-weight: 600;
-    margin-bottom: 18rem;
-  }
-  
-  header img {
-    order: 2;
   }
   
   .header-container {
     order: 1;
   }
 
+  .astronaut {
+    order: 2;
+  }
+
+  .astronaut img {
+    max-width: 720rem;
+  }
+
+  /* texts */
+
+  header h1 {
+    margin-top: 31.2rem;
+    font-size: 5.8rem;
+  }
+  
   p {
     font-size: 2rem;
   }
+
+  .subtitle {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 18rem;
+  }
+
+  /* main */
 
   #cards {
     display: grid;
@@ -260,18 +304,22 @@ footer p {
     width: 9rem;
     height: 9rem;
   }
-
-  .stars {
-    display: flex;
-    justify-content: flex-end
-  }
+  /* contact-section */
 
   .contact-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   input {
     width: 59.2rem;
   }
+
+  /* star-background */
+
+  .stars {
+    display: flex;
+    justify-content: flex-end
+  }
+  
 }
