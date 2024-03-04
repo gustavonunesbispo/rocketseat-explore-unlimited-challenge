@@ -175,6 +175,10 @@ button {
   transition: .3s;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 .stars {
   display: none;
   animation: twinkling 1.5s linear infinite;
