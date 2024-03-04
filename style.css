@@ -9,6 +9,7 @@
 :root {
   font-size: 62.5%;
   --color--bg--white: #F9F4FB;
+  --color--bg--white--800: #bfbcc1;
   --color--bg--purple--600: #343193; 
   --color--bg--purple--800: #302C63;
   --color--title--pink: #B52184;
@@ -23,6 +24,18 @@ html, body, input, textarea, button {
   font-size: 1.6rem;
 }
 
+h1, h2, h3 {
+  color: var(--color--title--pink);
+}
+
+p, input, textarea, button {
+  color: var(--color--subtitle-purple);
+}
+
+form, fieldset, input, textarea, button {
+  border: none;
+}
+
 body {
   display: grid;
   height: 100vh;
@@ -35,47 +48,20 @@ header {
   padding-bottom: 9.3rem;
 }
 
-main {
-  padding: 5.3rem 0 5.3rem 0;
+header img {
+  animation: scale 30s linear infinite; 
+  transition: transform 0.3s ease;
 }
 
-main, footer {
-  background: linear-gradient(to bottom right, var(--color--bg--purple--600), var(--color--bg--purple--800));
-}
-
-.stars {
-  display: none;
-}
-
-h1, h2, h3 {
-  color: var(--color--title--pink);
-}
-
-h1 {
+header h1 {
   font-size: 3.2rem;
   font-weight: 900;
   margin-top: 2rem;
 }
 
-h2 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-top: 1rem;
-}
-
-h3 {
-  font-size: 3.2rem;
-  font-weight: 900;
-  margin-bottom: 4.3rem;
-}
-
-p {
+header p {
   font-size: 1.6rem;
   font-weight: 600;
-}
-
-main p {
-  margin-top: 1.5rem;
 }
 
 .subtitle {
@@ -84,12 +70,24 @@ main p {
   margin-bottom: 3.5rem;
 }
 
-p, input, textarea, button {
-  color: var(--color--subtitle-purple);
+main {
+  padding: 5.3rem 0 5.3rem 0;
+  background: linear-gradient(to bottom right, var(--color--bg--purple--600), var(--color--bg--purple--800));
 }
 
-form, fieldset, input, textarea, button {
-  border: none;
+main img {
+  animation: rotate 10s linear infinite; 
+  transition: transform 0.3s ease;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+main p {
+  margin-top: 1.5rem;
 }
 
 #cards {
@@ -105,6 +103,11 @@ form, fieldset, input, textarea, button {
   height: 33.8rem;
   border-radius: 1.9rem;
   padding: 2.6rem;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card img {
@@ -119,6 +122,12 @@ form, fieldset, input, textarea, button {
 form {
   display: grid;
   justify-content: center;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 4.3rem;
 }
 
 fieldset {
@@ -163,6 +172,12 @@ button {
   font-weight: 800;
   width: 18rem;
   height: 4.5rem;
+  transition: .3s;
+}
+
+.stars {
+  display: none;
+  animation: twinkling 1.5s linear infinite;
 }
 
 footer {
@@ -175,6 +190,36 @@ footer p {
   color: var(--color--subtitle--white);
 }
 
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twinkling {
+  0%, 100% {
+    opacity: 1;
+    filter: brightness(1);
+    
+  }
+  50% {
+    opacity: 0.5;
+    filter: brightness(2);
+  }
+}
+
 @media (min-width: 1430px) {
   header {
     display: grid;
@@ -182,22 +227,22 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 10.3rem;
   }
-
+  
   header h1 {
     margin-top: 31.2rem;
     font-size: 5.8rem;
   }
-
+  
   .subtitle {
     font-size: 3.2rem;
     font-weight: 600;
     margin-bottom: 18rem;
   }
-
+  
   header img {
     order: 2;
   }
-
+  
   .header-container {
     order: 1;
   }
