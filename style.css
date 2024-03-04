@@ -38,13 +38,14 @@ form, fieldset, input, textarea, button {
 
 body {
   display: grid;
-  width: 100%;
+  min-width: 90rem;
   height: 100vh;
   background-color: var(--color--bg--white);
 }
 
 header {
   display: grid;
+  align-items: center;
   justify-items: center;
   padding-bottom: 9.3rem;
 }
