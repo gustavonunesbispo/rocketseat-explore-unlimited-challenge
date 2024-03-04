@@ -176,6 +176,32 @@ footer p {
 }
 
 @media (min-width: 1430px) {
+  header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 10.3rem;
+  }
+
+  header h1 {
+    margin-top: 31.2rem;
+    font-size: 5.8rem;
+  }
+
+  .subtitle {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 18rem;
+  }
+
+  header img {
+    order: 2;
+  }
+
+  .header-container {
+    order: 1;
+  }
+
   p {
     font-size: 2rem;
   }
@@ -211,5 +237,4 @@ footer p {
   input {
     width: 59.2rem;
   }
-
 }
