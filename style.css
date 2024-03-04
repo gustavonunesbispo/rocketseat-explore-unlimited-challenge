@@ -38,7 +38,7 @@ form, fieldset, input, textarea, button {
 
 body {
   display: grid;
-  min-width: 90rem;
+  margin: 0 auto;
   height: 100vh;
   background-color: var(--color--bg--white);
 }
