@@ -71,6 +71,7 @@ header p {
 }
 
 main {
+  width: 100%;
   padding: 5.3rem 0 5.3rem 0;
   background: linear-gradient(to bottom right, var(--color--bg--purple--600), var(--color--bg--purple--800));
 }
