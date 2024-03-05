@@ -46,14 +46,6 @@ body {
   background-color: var(--color--bg--white);
 }
 
-#scroll-link img{
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-#scroll-link img:hover {
-  transform: scale(1.1); 
-}
 
 #page {
   display: grid;
@@ -73,7 +65,12 @@ header {
 }
 
 .astronaut img {
-  max-width: 36.4rem;
+  max-width: 30rem;
+  transition: .3s;
+}
+
+.astronaut img:hover {
+  transform: scale(1.1);
 }
 
 .header-container {
@@ -85,17 +82,36 @@ header h1 {
   font-size: 3.2rem;
   font-weight: 900;
   margin-top: 2rem;
+  transition: .3s;
+}
+
+header h1:hover {
+  color: var(--color--subtitle-purple);
+}
+
+header h1:hover + p {
+  color: var(--color--title--pink);
 }
 
 header p {
   font-size: 1.6rem;
   font-weight: 600;
+  transition: .3s;
 }
 
 .subtitle {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 3.5rem;
+}
+
+#scroll-link img{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#scroll-link img:hover {
+  transform: scale(1.1); 
 }
 
 /* main */
@@ -127,9 +143,10 @@ main p {
 }
 
 .card {
+  display: grid;
   background-color: var(--color--bg--white);
-  width: 35.2rem;
-  height: 33.8rem;
+  width: 30rem;
+  min-height: 34rem;
   border-radius: 1.9rem;
   padding: 2.6rem;
   transition: .3s;
@@ -160,6 +177,7 @@ h3 {
   margin-bottom: 4.3rem;
 }
 
+
 /* form reset */
 
 form, fieldset, input, textarea, button {
@@ -177,6 +195,11 @@ fieldset {
 .input-wrapper {
   position: relative;
   display: inline-block;
+  transition: .3s;
+}
+
+.input-wrapper:hover {
+  transform: scale(1.1);
 }
 
 input {
@@ -200,6 +223,11 @@ textarea {
   border: .2rem solid var(--color--border--purple);
   padding: 1.2rem 1.6rem 1.6rem 1.6rem;
   height: 12.6rem;
+  transition: .3s;
+}
+
+textarea:hover {
+  transform: scale(1.1);
 }
 
 button {
@@ -210,6 +238,7 @@ button {
   font-weight: 800;
   width: 18rem;
   height: 4.5rem;
+  cursor: pointer;
   transition: .3s;
 }
 
